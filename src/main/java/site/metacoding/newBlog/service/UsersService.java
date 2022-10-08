@@ -14,6 +14,7 @@ public class UsersService {
 	private final UsersDao usersDao;
 	
 	public void 회원가입(JoinDto joinDto) {
+		System.out.println("서비스 실행됨");
 		Users users = joinDto.toEntity();
 		usersDao.insert(users);
 	}

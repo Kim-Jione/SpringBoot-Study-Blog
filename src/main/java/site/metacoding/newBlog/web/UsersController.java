@@ -19,8 +19,9 @@ public class UsersController {
 	
 	private final UsersService usersService;
 	
-	@GetMapping("/joinForm")
+	@GetMapping({"/","/joinForm"})
 	public String joinForm() {
+		System.out.println("컨트롤러 실행됨");
 		return "users/joinForm";
 	}
 	
