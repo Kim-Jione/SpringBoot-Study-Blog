@@ -5,7 +5,8 @@
 <mapper namespace="site.metacoding.newBlog.domain.users.UsersDao">
 
 	<insert id="insert">
-		INSERT INTO users(username, password, email, createdAt)
+		INSERT INTO users(username, password, email,
+		createdAt)
 		VALUES(#{username}, #{password}, #{email}, now())
 	</insert>
 
@@ -16,6 +17,12 @@
 	<select id="findById"
 		resultType="site.metacoding.newBlog.domain.users.Users">
 	</select>
+
+	<select id="findByUsername"
+		resultType="site.metacoding.newBlog.domain.users.Users">
+		SELECT * FROM users WHERE username = #{username} 
+	</select>
+
 
 	<update id="update">
 	</update>

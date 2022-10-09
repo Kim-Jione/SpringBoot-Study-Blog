@@ -3,7 +3,9 @@ package site.metacoding.newBlog.domain.users;
 import java.sql.Timestamp;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Getter
 public class Users {
 

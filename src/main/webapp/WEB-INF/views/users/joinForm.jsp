@@ -27,7 +27,7 @@
 	</form>
 </div>
 
-<script>ㄴ
+<script>
 	
 </script>
 
