@@ -17,8 +17,8 @@ import lombok.RequiredArgsConstructor;
 import site.metacoding.newBlog.domain.users.Users;
 import site.metacoding.newBlog.service.UsersService;
 import site.metacoding.newBlog.web.dto.CMRespDto;
-import site.metacoding.newBlog.web.dto.request.JoinDto;
-import site.metacoding.newBlog.web.dto.request.LoginDto;
+import site.metacoding.newBlog.web.dto.request.users.JoinDto;
+import site.metacoding.newBlog.web.dto.request.users.LoginDto;
 
 @RequiredArgsConstructor
 @Controller
@@ -32,7 +32,12 @@ public class UsersController {
 		return "users/joinForm";
 	}
 
-	@GetMapping({ "/", "/loginForm" })
+	@GetMapping("/mainForm")
+	public String mainForm() {
+		return "boards/mainForm";
+	}
+
+	@GetMapping("/loginForm")
 	public String loginForm(Model model, HttpServletRequest request) {
 		Cookie[] cookies = request.getCookies();
 		for (Cookie cookie : cookies) {

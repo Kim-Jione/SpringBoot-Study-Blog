@@ -1,4 +1,4 @@
-package site.metacoding.newBlog.web.dto.request;
+package site.metacoding.newBlog.web.dto.request.users;
 
 import lombok.Getter;
 import lombok.Setter;

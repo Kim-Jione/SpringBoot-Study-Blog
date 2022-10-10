@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import lombok.RequiredArgsConstructor;
 import site.metacoding.newBlog.domain.users.Users;
 import site.metacoding.newBlog.domain.users.UsersDao;
-import site.metacoding.newBlog.web.dto.request.JoinDto;
-import site.metacoding.newBlog.web.dto.request.LoginDto;
+import site.metacoding.newBlog.web.dto.request.users.JoinDto;
+import site.metacoding.newBlog.web.dto.request.users.LoginDto;
 
 @RequiredArgsConstructor
 @Service
