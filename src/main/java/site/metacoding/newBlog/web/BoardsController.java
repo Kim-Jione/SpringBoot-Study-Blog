@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import lombok.RequiredArgsConstructor;
 import site.metacoding.newBlog.service.BoardsService;
 import site.metacoding.newBlog.web.dto.response.boards.MainDto;
+
 @RequiredArgsConstructor
 @Controller
 public class BoardsController {
